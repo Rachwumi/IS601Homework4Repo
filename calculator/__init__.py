@@ -12,17 +12,17 @@ class Calculator:
 
     @staticmethod
     def add(x:Decimal, y:Decimal, str):
-          return _calculate(x,y,'add')
+          return Calculator._calculate(x,y,'add')
     
     @staticmethod
     def subtract(x:Decimal, y:Decimal, str):
-          return _calculate(x,y,'subtract')
+          return Calculator._calculate(x,y,'subtract')
     
     @staticmethod
     def divide(x:Decimal, y:Decimal, str):
-          return _calculate(x,y,'divide')
+          return Calculator._calculate(x,y,'divide')
     
     @staticmethod
     def multiply(x:Decimal, y:Decimal, str):
-          return _calculate(x,y,'multiply')
+          return Calculator._calculate(x,y,'multiply')
 
