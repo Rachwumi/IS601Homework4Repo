@@ -1,4 +1,4 @@
-from arithematic import add, subtract, divide, multiply
+from calculator.arithematic import add, subtract, divide, multiply
 from decimal import Decimal
 from string import str
 

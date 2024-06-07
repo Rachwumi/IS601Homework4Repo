@@ -1,4 +1,4 @@
-from calculation import Calculation
+from calculator.calculation import Calculation
 from decimal import Decimal
 
 class Calculator_History:

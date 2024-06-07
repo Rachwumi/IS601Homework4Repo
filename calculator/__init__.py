@@ -1,5 +1,5 @@
-from History import Calculator_History
-from calculation import Calculation
+from calculator.History import Calculator_History
+from calculator.calculation import Calculation
 from decimal import Decimal
 
 
