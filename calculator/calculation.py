@@ -8,6 +8,7 @@ class Calculation:
         self.y = y
         self.comp = comp
 
+@classmethod
 def performCalculation(self, computation: str):
     if computation == 'add':
         return add(self.x, self.y)
