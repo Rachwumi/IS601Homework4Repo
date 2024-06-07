@@ -9,12 +9,12 @@ class Calculation:
         self.comp = comp
 
 @classmethod
-def performCalculation(self, computation: str):
-    if computation == 'add':
+def performCalculation(self):
+    if self.comp == 'add':
         return add(self.x, self.y)
-    elif computation == 'subtract':
+    elif self.comp == 'subtract':
         return subtract(self.x, self.y)
-    elif computation == 'mulitply':
+    elif self.comp == 'mulitply':
         return multiply(self.x, self.y)
     else:
         return divide(self.x, self.y)
