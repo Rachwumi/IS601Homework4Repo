@@ -8,7 +8,7 @@ class Calculation:
         self.y = y
         self.comp = comp
 
-def performCalculation(computation: str):
+def performCalculation(self, computation: str):
     if computation == 'add':
         return add(self.x, self.y)
     elif computation == 'subtract':
