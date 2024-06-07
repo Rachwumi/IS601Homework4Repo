@@ -1,8 +1,7 @@
-from calculator.calculation import Calculation
-from decimal import Decimal
+from calculator.calculation import Calculation as calc
 
 class Calculator_History:
-    log: list[Calculation] = []
+    log: list[calc] = []
     size = 0
 
     @classmethod

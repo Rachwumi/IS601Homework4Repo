@@ -1,6 +1,7 @@
 '''My Calculator Test'''
 
 from decimal import Decimal
+import pytest
 from calculator import Calculator
 
 def test_addition():
@@ -17,8 +18,9 @@ def test_multiplication():
 
 def test_division():
     '''Test that division function works '''    
-    assert Calculator.divide(2, 2, 'divide') == Decimal(1) 
+    assert Calculator.divide(2, 2, 'divide') == Decimal(1)
 
-def test_divisionFailure():
-    '''Test that division function works '''    
-    assert Calculator.subtract(2, 2, 'divide') == Decimal(0)
+def test_dividefail():
+    '''Test that division failure works '''
+    with pytest.raises(Exception, match="You can not divide by zero"):
+        Calculator.divide(2, 0, 'divide')

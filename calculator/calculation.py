@@ -7,16 +7,16 @@ class Calculation:
         self.y = y
         self.comp = comp
 
-    @classmethod
+    
     def performCalculation(self):
-        #if self.comp == 'add':
-        return add(self.x, self.y)
-        '''elif self.comp == 'subtract':
+        if self.comp == 'add':
+            return add(self.x, self.y)
+        elif self.comp == 'subtract':
             return subtract(self.x, self.y)
-        elif self.comp == 'mulitply':
+        elif self.comp == 'multiply':
             return multiply(self.x, self.y)
         else:
-            return divide(self.x, self.y)'''
+            return divide(self.x, self.y)
 
 
 
