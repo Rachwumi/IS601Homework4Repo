@@ -7,4 +7,5 @@ fake = Faker()
 
 
 def pytest_addoption(parser):
-    parser.addoption("--num_records", action="store", default=10, type=int, help="Number of test records to generate")
+    parser.addoption("--num_records", action="store", default=9, type=int, help="Number of test records to generate")
+
