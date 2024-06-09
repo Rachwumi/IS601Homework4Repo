@@ -4,15 +4,15 @@ import pytest
 from calculator.arithematic import add, subtract, multiply, divide
 
 def test_faker(int1, int2, operation, expected):
-    print(operation)
+    ''' Testing the add, multiply, divide, and subtract arithematic'''
     if operation == 'add':
-        assert add(int1, int2) == expected, f"Failed the addition with {int1} and {int2}: {expected}"
+        assert add(int1, int2) == expected, f"Failed the addition with {int1} and {int2}"
     elif operation == 'multiply':
-        assert multiply(int1, int2) == expected, f"Failed the multiply with {int1} and {int2}: {expected}"
+        assert multiply(int1, int2) == expected, f"Failed the multiply with {int1} and {int2}"
     elif operation == 'divide':
-        assert divide(int1, int2) == expected, f"Failed the divide with {int1} and {int2}: {expected}"
+        assert divide(int1, int2) == expected, f"Failed the divide with {int1} and {int2}"
     else:
-        assert subtract(int1, int2) == expected, f"Failed the subtract with {int1} and {int2}: {expected}"
+        assert subtract(int1, int2) == expected, f"Failed the subtract with {int1} and {int2}"
 
 def test_dividefail():
     ''' Testing the divide fail arithematic'''
